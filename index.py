@@ -1,3 +1,4 @@
+import time
 def kbc():
     questions =[
     ["What is the name of the capital of Bangladesh?","Chittagong","Dhaka","Khulna","Rajshahi",2],
@@ -11,4 +12,10 @@ def kbc():
     ["Which is the highest award of Bangladesh?","Ekushey Padak","Freedom Award","National Film Award","Bangla Academy Award",2],
     ["Which is the largest river of Bangladesh?","Padma","Meghna","Brahmaputra","Karnaphuli",3]
     ]
+    print("-----------Welcome to the Who wanna be millionaire game---------")
+    time.sleep(1)
+    money_won = 0
+    levels =[1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,]
+    for i in range(len(questions)):
+        current_qst = questions[i]
 kbc()
