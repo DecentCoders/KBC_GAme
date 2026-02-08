@@ -18,4 +18,13 @@ def kbc():
     levels =[1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,]
     for i in range(len(questions)):
         current_qst = questions[i]
+        print(f'\nQuestion for usd {levels[i]}')
+        print(f'{current_qst[0]}\n 1.{current_qst[1]} \t 2.{current_qst[2]} \n 3.{current_qst[3]} \t 4.{current_qst[4]}')
+        # try:
+        #     choice = int(input("Enter your choice (or 0 to quite with current prize money): "))
+        # except ValueError:
+        #     print("Invalid input, Please enter a number...")
+        #     break
+        
+            
 kbc()
