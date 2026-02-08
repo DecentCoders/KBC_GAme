@@ -33,7 +33,7 @@ def kbc():
             print(f"Right answer.. You have won USD {money_won}")
         else:
             print(f"Wrong answer! The correct answer was {current_qst[5]}")
-            print("You have lost everything...Sorry")
+            print("You have lost everything...Sorry!")
             break
         if money_won == levels[-1]:
             print("Congratulations You have completed the game. Thank you")          
