@@ -20,11 +20,21 @@ def kbc():
         current_qst = questions[i]
         print(f'\nQuestion for usd {levels[i]}')
         print(f'{current_qst[0]}\n 1.{current_qst[1]} \t 2.{current_qst[2]} \n 3.{current_qst[3]} \t 4.{current_qst[4]}')
-        # try:
-        #     choice = int(input("Enter your choice (or 0 to quite with current prize money): "))
-        # except ValueError:
-        #     print("Invalid input, Please enter a number...")
-        #     break
-        
-            
+        try:
+            choice = int(input("Enter your choice (or 0 to quite with current prize money): "))
+        except ValueError:
+            print("Invalid input, Please enter a number...")
+            break
+        if choice == 0:
+             print(f'Quiting...You are taking home USD {money_won}')
+             break
+        elif choice == current_qst[5]:
+            money_won = levels[i]
+            print(f"Right answer.. You have won USD {money_won}")
+        else:
+            print(f"Wrong answer! The correct answer was {current_qst[5]}")
+            print("You have lost everything...Sorry")
+            break
+        if money_won == levels[-1]:
+            print("Congratulations You have completed the game. Thank you")          
 kbc()
