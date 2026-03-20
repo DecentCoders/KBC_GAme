@@ -65,7 +65,7 @@ This is a perfect practice project for Python beginners, covering core programmi
 - Basic CLI game design and user experience principles
 - Clean code organization in a single-file Python project
 
-## 🔮 Future Improvements- ( Try these )
+## 🔮 Future Improvements- ( Try doing these )
 This is a foundational project with lots of room to expand as you learn more Python. Suggested enhancements include:
 - Classic KBC lifelines: 50-50, Audience Poll, and Phone-A-Friend
 - A larger, categorized question bank with varying difficulty levels
